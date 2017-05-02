@@ -4,7 +4,7 @@
 try{
         define('username','root');
         define('password','');
-        $db = new PDO('mysql:host=localhost;dbname=sparepart',username, password);
+        $db = new PDO('mysql:host=127.0.0.1;dbname=sparepart',username, password);
         
 
 

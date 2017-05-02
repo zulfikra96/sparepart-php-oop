@@ -10,12 +10,12 @@ class LoginController extends Helper{
     public function __construct()
     {
         $this->error = null;
-        
+
     }
 
     public function login($user,$pass)
     {
-        
+
         require $this->base_path("/config/db.php");
 
         try{
@@ -40,6 +40,11 @@ class LoginController extends Helper{
         }catch(PDOException $e){
             die($e->getMessage);
         }
+    }
+
+    public function save()
+    {
+
     }
 
 }
